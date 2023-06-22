@@ -46,7 +46,7 @@ app.get("/poll", (req, res) => {
 
 app.post("/hook", (req, res) => {
   console.log(req.body);
-  res.send();
+  res.status(500).send();
 });
 
 app.listen(port);
