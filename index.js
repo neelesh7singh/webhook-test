@@ -46,6 +46,10 @@ app.get("/poll", (req, res) => {
 
 app.post("/hook", (req, res) => {
   console.log(req.body);
+  console.log("herders: ");
+  console.log(req.headers);
+  console.log("------");
+
   res.status(500).send();
 });
 
